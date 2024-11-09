@@ -35,6 +35,8 @@ button {
   color: #111;
   border: 0;
   background: #F2BB16;
+  border-radius: 20px;
+  padding: 0.75rem;
 }
 
 .error {

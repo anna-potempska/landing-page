@@ -53,6 +53,8 @@ button {
     color: #111;
     border: 0;
     background: $secondary;
+    border-radius: $base-border-radius;
+    padding: $base-padding;
 }
 
 .error {
