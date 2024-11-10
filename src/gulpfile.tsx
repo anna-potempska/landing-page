@@ -4,12 +4,14 @@ const sass = require('gulp-dart-sass');
 function buildStyles() {
     return src('styles/**/*.scss') 
         .pipe(sass())              
-        .pipe(dest('src/css/'));  }
+        .pipe(dest('css/'));     
+}
 
 function watchTask() {
-    watch(['styles/**/*.scss'], buildStyles);  
+    watch(['styles/**/*.scss'], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);
+
 
 export {}
