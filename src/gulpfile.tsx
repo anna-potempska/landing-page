@@ -3,7 +3,7 @@ const sass = require('gulp-dart-sass');
 
 function buildStyles() {
     return src('styles/**/*.scss') 
-        .pipe(sass())              
+        .pipe(sass())             
         .pipe(dest('css/'));     
 }
 
